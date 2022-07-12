@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo"><strong>Cadastro de clientes</strong></h1>
+        <p>Complete suas informações</p>
+        <br>
+    </div>
+    
+    <form>
+        <fieldset class="grupo"
+            div>
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+    <fieldset>
+        <div>
+        <label for="email"><strong>email</strong></label>
+        <input type="email" name="email" id="email" required>
+    </div>
+</fieldset>
+<fieldset>    
+<div>
+        <label><strong> Como você conheceu a nossa agência?</strong></label>
+        <label>
+            <input type="radio" name="devweb" value="instagram" checked> instagram
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="facebook"> Facebook
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="outros"> outros
+        </label>
+    </div>
+</fieldset>
+<fieldset>   
+<div>
+        <label for="gênero"><strong>Gênero</strong></label>
+        <select id="gênero">
+            <option selected disabled value="">Selecione</option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+        </select>
+    </div>
+</fieldset>
+    <fieldset class="grupo">
+        <div id="check">
+            <label><strong> destinos de sua preferência</strong></label>
+            <input type="checkbox" id="destino1" name="destino1" value="Nordeste">
+            <label for="destino1">Nordeste</label>
+            <input type="checkbox" id="destino2" name="destino2" value="Sudeste">
+            <label for="destino2">Sudeste </label>
+            <input type="checkbox" id="destino3" name="destino3" value="Sul">
+            <label for="destino3">Sul</label>
+            <input type="checkbox" id="destino4" name="destino4" value="Exterior">
+            <label for="destino4">Exterior</label>
+        </div>
+    </fieldset>
+    <button class="botao" type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
